@@ -29,11 +29,16 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PushSourceFilter.cpp">
+    <ClCompile Include="PushSourceFilters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="PushSourceFilters.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
   </ItemGroup>
 </Project>

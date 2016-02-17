@@ -1,0 +1,65 @@
+import "unknwn.idl";
+import "strmif.idl";
+
+[
+	uuid(7e3b78c4-3a6b-4992-9a30-b4344684d51f),
+    version(1.0),
+	helpstring("Push Source Filters Type Library")
+]
+library PushSourceFiltersLib
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+	[
+		uuid(80afed4a-4fdb-49e7-910b-5ecf55f583b5)
+	]
+	coclass PushSource
+	{
+		[default] interface IUnknown;
+	};
+
+	[
+		uuid(7ee57c6a-8493-4d74-a9ca-78717eebc05b)
+	]
+	coclass VideoSource
+	{
+		[default] interface IUnknown;
+	};
+
+	[
+		uuid(50fa9528-e48f-4eca-9370-d9c3aa851968)
+	]
+	coclass AudioSource
+	{
+		[default] interface IUnknown;
+	};
+
+	[
+		object,
+		uuid(7323aadc-8c6a-4eec-8461-e01691f14c88),
+		helpstring("Push Source Interface")
+	]
+	interface IPushSource : IUnknown
+	{
+		[helpstring("Retrieve a free frame buffer")]
+		HRESULT GetFrameBuffer([out] unsigned char** ppBuffer, [out] unsigned long* pSize);
+
+		[helpstring("Deliver a frame buffer")]
+		HRESULT Deliver([in] unsigned char* pBuffer);
+	}
+
+	[
+		object,
+		uuid(460aff21-5d91-4a58-84bf-582d9667ae25),
+		helpstring("Push Source 2 Interface")
+	]
+	interface IPushSource2 : IUnknown
+	{
+		[helpstring("Retrieve a free media sample")]
+		HRESULT GetFrameBuffer([out] IMediaSample** ppSample);
+
+		[helpstring("Deliver a media sample")]
+		HRESULT Deliver([in] IMediaSample* pSample);
+	}
+};
