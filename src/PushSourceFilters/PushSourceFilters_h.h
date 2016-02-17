@@ -4,7 +4,7 @@
 
 
  /* File created by MIDL compiler version 8.00.0603 */
-/* at Tue Feb 16 20:25:08 2016
+/* at Tue Feb 16 21:08:17 2016
  */
 /* Compiler settings for PushSourceFilters.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 
@@ -40,6 +40,18 @@
 #endif
 
 /* Forward Declarations */ 
+
+#ifndef __CustomMemAllocator_FWD_DEFINED__
+#define __CustomMemAllocator_FWD_DEFINED__
+
+#ifdef __cplusplus
+typedef class CustomMemAllocator CustomMemAllocator;
+#else
+typedef struct CustomMemAllocator CustomMemAllocator;
+#endif /* __cplusplus */
+
+#endif 	/* __CustomMemAllocator_FWD_DEFINED__ */
+
 
 #ifndef __PushSource_FWD_DEFINED__
 #define __PushSource_FWD_DEFINED__
@@ -109,6 +121,14 @@ extern "C"{
 
 
 EXTERN_C const IID LIBID_PushSourceFiltersLib;
+
+EXTERN_C const CLSID CLSID_CustomMemAllocator;
+
+#ifdef __cplusplus
+
+class DECLSPEC_UUID("e4a436cf-c222-4773-9483-27275d98e364")
+CustomMemAllocator;
+#endif
 
 EXTERN_C const CLSID CLSID_PushSource;
 

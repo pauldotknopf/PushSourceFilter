@@ -12,6 +12,14 @@ library PushSourceFiltersLib
     importlib("stdole2.tlb");
 
 	[
+		uuid(e4a436cf-c222-4773-9483-27275d98e364)
+	]
+	coclass CustomMemAllocator
+	{
+		[default] interface IUnknown;
+	};
+
+	[
 		uuid(80afed4a-4fdb-49e7-910b-5ecf55f583b5)
 	]
 	coclass PushSource

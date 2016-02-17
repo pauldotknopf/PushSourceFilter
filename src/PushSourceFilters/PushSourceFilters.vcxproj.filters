@@ -30,6 +30,12 @@
     <ClInclude Include="PushSourceFilters_h.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PushSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -45,6 +51,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PushSourceFilters_i.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PushSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
