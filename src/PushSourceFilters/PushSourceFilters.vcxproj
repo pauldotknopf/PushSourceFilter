@@ -85,6 +85,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioSource.h" />
     <ClInclude Include="CustomAllocator.h" />
     <ClInclude Include="PushSource.h" />
     <ClInclude Include="PushSourceFilters_h.h" />
@@ -94,6 +95,7 @@
     <ClInclude Include="VideoSource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AudioSource.cpp" />
     <ClCompile Include="CustomAllocator.cpp" />
     <ClCompile Include="PushSource.cpp" />
     <ClCompile Include="PushSourceFilters.cpp" />
